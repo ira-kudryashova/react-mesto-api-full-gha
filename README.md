@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.23.245
 
-Frontend https://...
+Frontend https://ira-kudryashova.github.io/react-mesto-auth/
 
-Backend https://...
+Backend https://ira-kudryashova.github.io/express-mesto-gha/
