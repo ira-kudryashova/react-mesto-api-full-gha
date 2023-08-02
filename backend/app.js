@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
@@ -21,12 +23,12 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const URL = 'mongodb://127.0.0.1:27017/mestodb';
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3001, DBPORT = URL } = process.env;
 
 mongoose.set('strictQuery', true);
 
 mongoose
-  .connect(URL)
+  .connect(DBPORT)
   .then(() => {
     console.log('БД успешно подключена');
   })
