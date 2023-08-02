@@ -1,24 +1,24 @@
 // импортируем нужные модули
-const winston = require('winston');
-const expressWinston = require('express-winston');
+import { transports as _transports, format as _format } from 'winston';
+import { logger, errorLogger as _errorLogger } from 'express-winston';
 
 // создадим логгер запросов
-const requestLogger = expressWinston.logger({
+const requestLogger = logger({
   transports: [ //опуия transports отвечает за то? куда нужно писать лог + это массив? в который можно записать др/транспорты
-    new winston.transports.File({ filename: 'request.log' }),
+    new _transports.File({ filename: 'request.log' }),
   ],
-  format: winston.format.json(), //опция format отвечает за формат записи логов
+  format: _format.json(), //опция format отвечает за формат записи логов
 });
 
 // логгер ошибок
-const errorLogger = expressWinston.errorLogger({
+const errorLogger = _errorLogger({
   transports: [
-    new winston.transports.File({ filename: 'error.log' }),
+    new _transports.File({ filename: 'error.log' }),
   ],
-  format: winston.format.json(),
+  format: _format.json(),
 });
 
-module.exports = {
+export default {
   requestLogger,
   errorLogger,
 };

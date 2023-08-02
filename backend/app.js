@@ -17,7 +17,7 @@ const routeCards = require('./routes/cards');
 const NotFoundError = require('./errors/NotFoundError');
 const error = require('./middlewares/error');
 
-const { requestLogger, errorLogger } = require('./middlewares/logger');
+const { requestLogger, errorLogger } = require('./middlewares/logger').default;
 
 const URL = 'mongodb://127.0.0.1:27017/mestodb';
 
