@@ -4,6 +4,12 @@ const { celebrate, Joi } = require('celebrate');
 
 const { URL_REGEX } = require('../utils/constants');
 
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 /** пакет, предназначенный для обработки валидации данных в
  * Express.js. Он предоставляет удобный способ определения
  * применения правил валидации для запросов в вашем приложении Express
