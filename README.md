@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.23.245
+IP-адрес 158.160.2.78
 
 Frontend https://irakudryashova.nomoreparties.co
 
