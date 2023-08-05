@@ -5,12 +5,12 @@
   
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-Адрес репозитория: https://github.com/...
+Адрес репозитория: https://ira-kudryashova.github.io/react-mesto-api-full-gha/
 
 ## Ссылки на проект
 
 IP-адрес 158.160.23.245
 
-Frontend https://ira-kudryashova.github.io/react-mesto-auth/
+Frontend https://irakudryashova.nomoreparties.co
 
-Backend https://ira-kudryashova.github.io/express-mesto-gha/
+Backend https://api.irakudryashova.nomoreparties.co

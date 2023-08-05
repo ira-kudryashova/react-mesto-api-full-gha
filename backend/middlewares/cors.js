@@ -1,6 +1,6 @@
 const allowedCors = [
-  'https://',
-  'http://',
+  'https://irakudryashova.nomoreparties.co',
+  'http://irakudryashova.nomoreparties.co',
   'https://localhost:3000',
   'http://localhost:3000',
   'https://localhost:3001',
