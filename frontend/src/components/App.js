@@ -223,11 +223,13 @@ function App() {
       .login(email, password)
       .then((res) => {
         localStorage.setItem("jwt", res.token)
-        setUserEmail(res.email)
+        setUserEmail(email.email)
         setIsLoggedIn(true)
         navigate("/")
       })
       .catch((err) => {
+        setIsSuccessInfoTooltipStatus(false)
+        openInfoTooltip()
         console.log(err)
       })
   }
